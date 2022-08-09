@@ -97,7 +97,7 @@ function postLoader(el) {
             const containerCurrentPage = Number(container.dataset.current);
             const totalPages = Number(container.dataset.total);
             // loader.classList.add("show");
-			window.location.href = element.href + '?query=value';
+			// window.location.href = element.href + '?query=value';
             viewMoreBtn.classList.remove("show");
 
             if (containerCurrentPage < totalPages) {

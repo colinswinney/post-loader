@@ -5,7 +5,7 @@
 	"version": "0.1.0",
 	"title": "Post Loader",
 	"category": "widgets",
-	"description": "Load posts or pages from a specific category or tag, and load more on the page with a button.",
+	"description": "Display a list of posts or pages and load more on the page with a button.",
 	"supports": {
 		"html": false
 	},
