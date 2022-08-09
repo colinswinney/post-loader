@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "cjsb/post-loader",
+	"version": "0.1.0",
+	"title": "Post Loader",
+	"category": "widgets",
+	"description": "Load posts or pages from a specific category or tag, and load more on the page with a button.",
+	"supports": {
+		"html": false
+	},
+	"attributes": {
+		"postType":  {
+			"default": "posts",
+			"type": "string"
+		},
+		"perPage":  {
+			"default": "6",
+			"type": "string"
+		},
+		"order":  {
+			"default": "desc",
+			"type": "string"
+		},
+		"orderby":  {
+			"default": "date",
+			"type": "string"
+		},
+		"show": {
+			"default": {
+				"thumbnail": false,
+				"thumbnailSize": "full",
+				"title": true,
+				"date": false,
+				"dateFormat": "0",
+				"categories": false,
+				"tags": false,
+				"content": false,
+				"excerpt": false,
+				"author": false
+			},
+			"type": "object"
+		}
+	},
+	"textdomain": "post-loader",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
